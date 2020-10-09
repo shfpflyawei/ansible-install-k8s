@@ -5,7 +5,7 @@
 下载Ansible部署文件：
 
 ```
-# git clone https://github.com/lizhenliang/ansible-install-k8s
+# git clone https://github.com/shfpflyawei/ansible-install-k8s
 # cd ansible-install-k8s
 ```
 
@@ -37,10 +37,10 @@ cert_hosts:
 ## 3、一键部署
 ### 架构图
 单Master架构
-![avatar](https://github.com/lizhenliang/ansible-install-k8s/blob/master/single-master.jpg)
+(https://github.com/shfpflyawei/ansible-install-k8s/blob/master/single-master.jpg)
 
 多Master架构
-![avatar](https://github.com/lizhenliang/ansible-install-k8s/blob/master/multi-master.jpg)
+(https://github.com/shfpflyawei/ansible-install-k8s/blob/master/multi-master.jpg)
 ### 部署命令
 单Master版：
 ```
@@ -76,4 +76,3 @@ kubectl certificate approve node-csr-xxx
 
 视频教程：https://ke.qq.com/course/266656
 
-![avatar](https://github.com/lizhenliang/Shell-Python-Document/blob/master/%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F.png)
