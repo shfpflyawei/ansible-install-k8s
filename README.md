@@ -74,5 +74,4 @@ kubectl get csr
 kubectl certificate approve node-csr-xxx
 ```
 
-视频教程：https://ke.qq.com/course/266656
 
