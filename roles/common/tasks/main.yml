@@ -30,3 +30,9 @@
 #- name: 同步系统时间
 #  shell: ntpdate time.windows.com
 
+- name: 拷贝内核优化脚本
+  copy: src=fixsysctl.sh dest=/tmp/fixsysctl.sh mode=u+x
+
+- name: 优化内核等参数
+  shell: /bin/bash /tmp/fixsysctl.sh
+
