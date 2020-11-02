@@ -25,14 +25,24 @@
 - name: 添加hosts
   template: src=hosts.j2 dest=/etc/hosts 
 
-#- name: 同步系统时间
-#  yum: name=ntpdate state=present
-#- name: 同步系统时间
-#  shell: ntpdate time.windows.com
+- name: 同步系统时间
+  yum: name=ntpdate state=present
+- name: 同步系统时间
+  shell: ntpdate ntp1.aliyun.com
 
 - name: 拷贝内核优化脚本
   copy: src=fixsysctl.sh dest=/tmp/fixsysctl.sh mode=u+x
 
 - name: 优化内核等参数
   shell: /bin/bash /tmp/fixsysctl.sh
+  
+- name: 安装conntrack
+  yum: name=conntrack state=presen
+
+- name: 安装ipset
+  yum: name=ipset state=presen
+  
+- name: 安装ipvsadm
+  yum: name=ipvsadm state=presen
+
 
